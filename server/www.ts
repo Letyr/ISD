@@ -4,10 +4,17 @@
  * Module dependencies.
  */
 import { app } from './src/app';
+import * as path from 'path';
 import { createServer } from 'http';
+import favicon from 'serve-favicon';
 import debug from 'debug';
 
 const log = debug('server:server');
+
+/**
+ * Set favicon to the app
+ */
+// app.use(favicon(path.join(__dirname, '../', 'favicon.ico')));
 
 /**
  * Get port from environment and store in Express.

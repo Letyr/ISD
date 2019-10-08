@@ -7,12 +7,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
 
-  constructor(public http: HttpClient) {
-
-  }
+  constructor(public http: HttpClient) {}
 
   public ngOnInit(): void {
-    this.http.get('http://localhost:3000/users').subscribe({
+    this.http.get('users').subscribe({
       next: response => {
         console.log(response);
       }
