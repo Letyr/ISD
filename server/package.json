@@ -1,12 +1,14 @@
 {
-  "name": "server",
-  "version": "0.0.0",
-  "private": true,
+  "name": "isd-server",
+  "version": "0.0.1",
+  "description": "Backend part",
   "scripts": {
     "dev": "nodemon www.ts",
     "start": "node ./dist/www.js",
     "build": "tsc -p ."
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "~4.13.1",
     "mysql2": "^1.7.0",
