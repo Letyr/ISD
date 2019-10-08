@@ -5,6 +5,6 @@ export const app = express();
 
 // app.use('/users', userController);
 
-app.use('/users', (req, res) => {
+app.use('/', (req, res) => {
     res.send('Hello world!');
 });
