@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "cd server & npm i & npm run build & npm run start"
   },
   "author": "",
   "license": "ISC"
