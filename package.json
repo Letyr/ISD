@@ -1,0 +1,13 @@
+{
+  "name": "isd",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./server/dist/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-cli": "^1.0.0-beta.28.3"
+  }
+}
