@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "nodemon app/www.ts",
-    "start": "node scripts/start.js",
+    "start": "set MODE=9999 & node scripts/start.js",
     "prod": "node dist/www.js",
     "build": "tsc -p ."
   },
