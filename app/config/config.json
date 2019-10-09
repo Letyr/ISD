@@ -10,7 +10,7 @@
     "username": "sqzfzacogfyqgx",
     "password": "9bd4036f217e0dcff6331eb63fff61b2493323bb238052723cc45d2969d1e458",
     "database": "d7gp3j8m7puvjr",
-    "host": "127.0.0.1",
+    "host": "ec2-107-20-193-199.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
