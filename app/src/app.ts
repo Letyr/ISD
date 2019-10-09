@@ -1,9 +1,9 @@
 import express from 'express';
-import { userController } from './routes/users';
+// import { userController } from './routes/users';
 
 export const app = express();
 
-app.use('/users', userController);
+// app.use('/users', userController);
 
 app.use('/', (req, res) => {
     res.send({ msg: 'Hello world!' });

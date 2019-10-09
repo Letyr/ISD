@@ -14,20 +14,31 @@ function execVerbose(code, options) {
 
 execVerbose('chcp 65001')
     .then(
-        () => execVerbose('sequelize db:migrate', { cwd: 'app' })
+        () => execVerbose('npm install', { cwd: 'app' })
     )
     .then(
-        () => Promise.all([
-            execVerbose('npm install', { cwd: 'app/public' }),
-            execVerbose('npm install')
-        ])
+        () => execVerbose('npm run build')
     )
     .then(
-        () => Promise.all([
-            execVerbose('npm run build', { cwd: 'app/public' }),
-            execVerbose('npm run build')
-        ])
+        () => execVerbose('npm run prod')
     )
-    .then(
-        () => execVerbose("npm run prod")
-    );
+
+// execVerbose('chcp 65001')
+//     .then(
+//         () => execVerbose('sequelize db:migrate', { cwd: 'app' })
+//     )
+//     .then(
+//         () => Promise.all([
+//             execVerbose('npm install', { cwd: 'app/public' }),
+//             execVerbose('npm install')
+//         ])
+//     )
+//     .then(
+//         () => Promise.all([
+//             execVerbose('npm run build', { cwd: 'app/public' }),
+//             execVerbose('npm run build')
+//         ])
+//     )
+//     .then(
+//         () => execVerbose("npm run prod")
+//     );
