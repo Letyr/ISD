@@ -1,3 +1,10 @@
+javascript
+npm
+git
+node
+child_process
+
+
 Frontend:
 
 Typescript
@@ -8,7 +15,7 @@ Backend:
 Typescript
 Express
 Sequelize
-Mysql2
+Postgres
 
 dependencies:
 validator - for Sequelize

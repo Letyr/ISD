@@ -14,7 +14,7 @@ const log = debug('server:server');
 /**
  * Set favicon to the app
  */
-// app.use(favicon(path.join(__dirname, '../', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, './public/', 'favicon.ico')));
 
 /**
  * Get port from environment and store in Express.
