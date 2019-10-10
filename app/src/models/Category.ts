@@ -1,8 +1,9 @@
 import { connection } from '../database/connection';
 import { Model, DataTypes } from 'sequelize';
 import { Change } from './Change';
+import { ICategory } from '../../schemas/category.interface';
 
-export class Category extends Model {
+export class Category extends Model implements ICategory {
     public id!: number;
 
     public name!: string;

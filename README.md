@@ -8,6 +8,8 @@ child_process
 Frontend:
 
 Typescript
+RxJS
+Bootstrap
 Angular
 
 Backend:

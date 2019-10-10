@@ -1,8 +1,9 @@
 import { connection } from '../database/connection';
 import { Model, DataTypes } from 'sequelize';
 import { Change } from './Change';
+import { IAccount } from '../../schemas/account.interface';
 
-export class Account extends Model {
+export class Account extends Model implements IAccount {
     public id!: number;
 
     public name!: string;

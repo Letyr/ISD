@@ -2,8 +2,9 @@ import { connection } from '../database/connection';
 import { Model, DataTypes,  } from 'sequelize';
 import { Account } from './Account';
 import { Category } from './Category';
+import { ITransfer } from '../../schemas/transfer.interface';
 
-export class Change extends Model {
+export class Change extends Model implements ITransfer {
     public id!: number;
 
     public amount!: number;
@@ -17,6 +18,10 @@ export class Change extends Model {
     public readonly createdAt!: Date;
 
     public readonly updatedAt!: Date;
+
+    public accountId!: number;
+
+    public categoryId!: number;
 }
 
 Change.init({
